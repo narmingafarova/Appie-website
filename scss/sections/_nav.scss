@@ -1,0 +1,84 @@
+nav {
+  position: fixed;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 4%);
+  z-index: 100;
+  .navbar-nav {
+    li {
+      margin-left: 30px;
+      cursor: pointer;
+      text-transform: capitalize;
+      a {
+        font-size: 15px;
+        font-weight: 500;
+        color: #0e1133;
+      }
+      &:hover {
+        .nav-link {
+          color: #2b70fa;
+        }
+      }
+    }
+    .dropdown {
+      li {
+        margin: 0;
+      }
+      .dropdown-menu {
+        li {
+          a {
+            transition: 0.3s;
+            line-height: 40px;
+            &:hover {
+              background-color: transparent;
+              color: #2b70fa;
+              transform: translate(6px);
+            }
+          }
+        }
+      }
+      .drop-home {
+        li {
+          display: inline-block;
+          a {
+            text-align: center;
+            img {
+              width: 145px;
+              height: 190px;
+            }
+          }
+          &:hover {
+            a {
+              transform: translate(0, -5px);
+              color: #0e1133;
+            }
+          }
+        }
+      }
+      &:hover {
+        .dropdown-menu {
+          display: block;
+          margin-top: 0; // remove the gap so it doesn't close
+        }
+      }
+    }
+  }
+  .login {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0e1133;
+    text-decoration: none;
+    i {
+      font-size: 19px;
+    }
+  }
+  .btn {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 45px;
+    padding: 0 30px;
+    &:hover {
+      color: #2b70fa;
+      border: 1px solid #2b70fa;
+      background-color: #fff;
+    }
+  }
+}

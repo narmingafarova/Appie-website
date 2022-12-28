@@ -1,0 +1,203 @@
+nav {
+  position: fixed;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.04);
+  z-index: 100;
+}
+nav .navbar-nav li {
+  margin-left: 30px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+nav .navbar-nav li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #0e1133;
+}
+nav .navbar-nav li:hover .nav-link {
+  color: #2b70fa;
+}
+nav .navbar-nav .dropdown li {
+  margin: 0;
+}
+nav .navbar-nav .dropdown .dropdown-menu li a {
+  transition: 0.3s;
+  line-height: 40px;
+}
+nav .navbar-nav .dropdown .dropdown-menu li a:hover {
+  background-color: transparent;
+  color: #2b70fa;
+  transform: translate(6px);
+}
+nav .navbar-nav .dropdown .drop-home li {
+  display: inline-block;
+}
+nav .navbar-nav .dropdown .drop-home li a {
+  text-align: center;
+}
+nav .navbar-nav .dropdown .drop-home li a img {
+  width: 145px;
+  height: 190px;
+}
+nav .navbar-nav .dropdown .drop-home li:hover a {
+  transform: translate(0, -5px);
+  color: #0e1133;
+}
+nav .navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+nav .login {
+  font-size: 15px;
+  font-weight: 500;
+  color: #0e1133;
+  text-decoration: none;
+}
+nav .login i {
+  font-size: 19px;
+}
+nav .btn {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 45px;
+  padding: 0 30px;
+}
+nav .btn:hover {
+  color: #2b70fa;
+  border: 1px solid #2b70fa;
+  background-color: #fff;
+}
+
+.initial {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.initial .row .init-info {
+  padding-top: 50vh;
+}
+.initial .row .init-info span {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #2b70fa;
+}
+.initial .row .init-info h1 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  margin: 7px 0 22px;
+}
+.initial .row .init-info p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #505056;
+}
+.initial .row .init-info .buttons .btn {
+  position: relative;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 23px;
+  border: 2px solid #0e1133;
+  border-radius: 6px;
+  transition: 0.3s;
+  overflow: hidden;
+  z-index: 1;
+}
+.initial .row .init-info .buttons .btn i {
+  font-size: 13px;
+  margin-right: 5px;
+}
+.initial .row .init-info .buttons .btn::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: 0.3s;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: -1;
+}
+.initial .row .init-info .buttons .btn:hover::before {
+  bottom: 0;
+  border-radius: 0;
+}
+.initial .row .init-info .buttons .btn-ios {
+  background-color: #0e1133;
+  margin: 0 12px 0 0;
+  color: #fff;
+}
+.initial .row .init-info .buttons .btn-ios::before {
+  background: #fff;
+}
+.initial .row .init-info .buttons .btn-ios:hover {
+  color: #0e1133;
+}
+.initial .row .init-info .buttons .btn-and {
+  background-color: #fff;
+  color: #0e1133;
+}
+.initial .row .init-info .buttons .btn-and::before {
+  background: #292929;
+}
+.initial .row .init-info .buttons .btn-and:hover {
+  color: #fff;
+}
+.initial .row .init-imgs {
+  position: relative;
+  margin-top: 30vh;
+  padding-left: 50px;
+}
+.initial .row .init-imgs .init-phone {
+  position: relative;
+  height: auto;
+  max-width: 100%;
+}
+.initial .row .init-imgs .init-phone::before {
+  position: absolute;
+  content: "";
+  right: 10%;
+  top: 10%;
+  z-index: -1;
+  height: 80%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #ff3e66;
+}
+.initial .row .init-imgs .init-mini-card {
+  position: absolute;
+  top: 25%;
+  right: -5%;
+}
+
+@media screen and (max-width: 1110px) {
+  .init-mini-card {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .initial .row .init-info {
+    margin-top: 20vh;
+    text-align: center;
+  }
+  .initial .row .init-info h1 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .initial .row .init-info .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .initial .row .init-imgs {
+    margin-top: 10vh;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=style.css.map */
