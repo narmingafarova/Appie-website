@@ -1,5 +1,10 @@
+// Helpers
+@import "helpers/var";
+
+// Sections
 @import "sections/nav";
 @import "sections/initial";
+@import "sections/design";
 
 body {
   font-family: "Roboto", sans-serif;
