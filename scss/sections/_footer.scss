@@ -1,0 +1,141 @@
+footer {
+  padding: 100px 0 80px;
+  background-color: $bg-grey;
+  .logo-text {
+    .logo {
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      color: $text-grey;
+      margin-bottom: 20px;
+    }
+    .social-icons {
+      margin-top: 30px;
+      padding: 0;
+      li {
+        list-style: none;
+        text-align: center;
+        i {
+          line-height: 32px;
+          font-size: 16px;
+          width: 32px;
+          height: 32px;
+          border-radius: 10%;
+          background-color: $white;
+          color: $black;
+          transition: 0.3s;
+        }
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        &:hover {
+          i {
+            background-color: $blue;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .foot-col {
+    text-align: left;
+    margin: 0 auto;
+    .foot-title {
+      color: $black;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding: 0;
+      margin-top: 5px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 32px;
+          color: $text-grey;
+          transition: 0.3s;
+        }
+        &:hover {
+          a {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  .touch {
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: $text-grey;
+      line-height: 1.8em;
+      letter-spacing: 0.1px;
+      padding-left: 5px;
+      i {
+        font-size: 18px;
+        color: $blue;
+        padding-right: 10px;
+      }
+      &:not(:last-child) {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+
+.foot-bar {
+  padding: 30px 0 50px;
+  background-color: $bg-grey;
+  border-top: 1px solid #e1e5ec;
+  .copy {
+    font-size: 15px;
+    font-weight: 400;
+    color: $text-grey;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    .row {
+      .col-12 {
+        text-align: center;
+        .social-icons {
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .touch {
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .foot-bar {
+    .container {
+      display: flex;
+      flex-direction: column;
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

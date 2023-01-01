@@ -40,3 +40,116 @@
     border-radius: 0;
   }
 }
+
+// Initial
+.initial {
+  .buttons {
+    .btn {
+      position: relative;
+      height: 45px;
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+      padding: 0 23px;
+      border: 2px solid $black;
+      border-radius: 6px;
+      transition: 0.3s;
+      overflow: hidden;
+      z-index: 1;
+      i {
+        margin-right: 5px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -100%;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        transition: 0.3s;
+        background-color: $white;
+        border-radius: 50%;
+        z-index: -1;
+      }
+      &:hover::before {
+        bottom: 0;
+        border-radius: 0;
+      }
+    }
+    .btn-ios {
+      background-color: $black;
+      margin: 0 12px 0 0;
+      color: $white;
+      &::before {
+        background: $white;
+      }
+      &:hover {
+        color: $black;
+      }
+    }
+    .btn-and {
+      background-color: $white;
+      color: $black;
+      &::before {
+        background: #292929;
+      }
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+// Footer
+.foot-bar {
+  .btn {
+    height: 45px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 23px;
+    border-radius: 6px;
+    transition: 0.3s;
+    z-index: 1;
+    i {
+      margin-right: 5px;
+    }
+  }
+  .btn-f-ios {
+    background-color: $white;
+    border: 2px solid $white;
+    margin-right: 20px;
+    &:hover {
+      background-color: transparent;
+      border: 2px solid #e7eaef;
+    }
+  }
+  .btn-f-and {
+    background-color: transparent;
+    border: 2px solid #e7eaef;
+    &:hover {
+      background-color: $white;
+      border: 2px solid $white;
+    }
+  }
+}
+
+// Blogs and Footer
+.read {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: $black;
+  padding: 0;
+  display: inline-block;
+  transition: 0.3s;
+  i {
+    margin-left: 5px;
+  }
+  &:hover {
+    color: $blue;
+  }
+}

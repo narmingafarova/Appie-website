@@ -1,0 +1,72 @@
+.subscribe {
+    padding: 0 0 120px;
+  .container {
+    background-image: url(https://tf.quomodosoft.com/appie/wp-content/uploads/2022/03/project-bg1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 80px 55px 0;
+    .row {
+      position: relative;
+      overflow: hidden;
+      .subs-text {
+        margin-bottom: 90px;
+        h3 {
+          font-size: 50px;
+          font-weight: 900;
+          line-height: 60px;
+          color: $white;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          color: #fffc;
+        }
+        form {
+          margin-top: 30px;
+          input {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            color: $text-grey;
+            background-color: $white;
+            border: 0;
+            border-radius: 6px;
+            width: 354px;
+            height: 50px;
+            padding: 0 0 0 30px;
+            margin-right: 10px;
+          }
+          button {
+            display: inline-block;
+            color: $white;
+            background-color: $black;
+            border-radius: 6px;
+            border: 0;
+            width: 120px;
+            height: 50px;
+            padding: 0;
+          }
+        }
+      }
+      .subs-img {
+        position: absolute;
+        right: -10%;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe {
+    form {
+        padding-bottom: 300px;
+      input {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

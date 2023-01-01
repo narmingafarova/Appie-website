@@ -1,0 +1,74 @@
+.blog {
+  padding: 110px 0;
+  .row {
+    margin-top: 45px;
+    .card {
+      border: 0;
+      overflow: hidden;
+      .img {
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          transition: 0.3s;
+        }
+      }
+      .card-body {
+        padding: 0;
+        margin-top: 18px;
+        .card-title {
+          font-size: 14px;
+          font-weight: 400;
+          color: $text-grey;
+          .date {
+            position: relative;
+            margin-right: 20px;
+            &::before {
+              content: "";
+              position: absolute;
+              left: calc(100% + 9px);
+              top: 50%;
+              transform: translateY(-50%);
+              height: 5px;
+              width: 5px;
+              background: $blue;
+              border-radius: 50%;
+            }
+          }
+          .category {
+            text-decoration: none;
+            color: $text-grey;
+            transition: 0.3s;
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+        .card-text {
+          a {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 34px;
+            color: $black;
+            transition: 0.3s;
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin-bottom: 30px;
+  }
+}

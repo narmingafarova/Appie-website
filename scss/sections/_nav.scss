@@ -1,6 +1,5 @@
 header {
   width: 100%;
-  position: fixed;
   z-index: 100;
   nav {
     box-shadow: 0 5px 5px 0 rgb(0 0 0 / 4%);
@@ -67,7 +66,6 @@ header {
       font-size: 15px;
       font-weight: 500;
       color: $black;
-      text-decoration: none;
     }
     .btn {
       font-size: 15px;

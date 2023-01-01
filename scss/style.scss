@@ -1,5 +1,6 @@
 // Helpers
 @import "helpers/var";
+@import "helpers/title";
 @import "helpers/button";
 
 // Sections
@@ -9,6 +10,11 @@
 @import "sections/traffic";
 @import "sections/authors";
 @import "sections/team";
+@import "sections/plans";
+@import "sections/questions";
+@import "sections/blog";
+@import "sections/subscribe";
+@import "sections/footer";
 
 body {
   font-family: "Roboto", sans-serif;
