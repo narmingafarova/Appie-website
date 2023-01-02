@@ -153,3 +153,68 @@
     color: $blue;
   }
 }
+
+// Header
+header {
+  .btn {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 45px;
+    padding: 0 30px;
+    &:hover {
+      color: $blue;
+      border: 1px solid $blue;
+      background-color: $white;
+    }
+  }
+}
+
+// Reactions
+.reactions {
+  .btn {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 47px;
+    color: $white;
+    background-color: $blue;
+    border-radius: 6px;
+    padding: 0 30px;
+    &:hover {
+      border: 1px solid $black;
+      background-color: $black;
+    }
+  }
+}
+
+// Plans
+.plans {
+  .btn {
+    padding: 0;
+    margin: 25px 0 10px;
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: #0e1133;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 2px solid #e7eaef;
+      padding: 12px 24px;
+      transition: 0.3s;
+    }
+    &:hover {
+      a {
+        background-color: #f8452d;
+        border-color: #f8452d;
+        color: $white;
+      }
+    }
+  }
+  .btn-red {
+    a {
+      background-color: #f8452d;
+      border-color: #f8452d;
+      color: $white;
+    }
+  }
+}

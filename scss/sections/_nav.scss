@@ -67,16 +67,5 @@ header {
       font-weight: 500;
       color: $black;
     }
-    .btn {
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 45px;
-      padding: 0 30px;
-      &:hover {
-        color: $blue;
-        border: 1px solid $blue;
-        background-color: $white;
-      }
-    }
   }
 }

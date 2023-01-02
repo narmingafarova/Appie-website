@@ -40,11 +40,11 @@
           height: 36px;
           text-align: center;
           transition: 0.3s;
-          color: #fff;
+          color: $white;
           border: 2px solid #a6a7b4;
           border-radius: 50%;
           &:hover {
-            color: #2b70fa;
+            color: $blue;
             background: $white;
             border: $white;
           }

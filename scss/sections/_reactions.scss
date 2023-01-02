@@ -1,0 +1,118 @@
+.reactions {
+  padding: 120px 0 0;
+  .row {
+    .list-cols {
+      margin-top: 170px;
+      ul {
+        padding: 0 40px 0 0;
+        li {
+          list-style: none;
+          a {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: $text-grey;
+            border-right: 3px solid #e8eaef;
+            padding: 5px;
+            transition: 0.3s;
+            .icon {
+              display: inline-block;
+              text-align: center;
+              font-size: 15px;
+              line-height: 36px;
+              color: #63636a;
+              width: 35px;
+              height: 35px;
+              background-color: #f1f2f7;
+              margin: 3px 14px 3px 0;
+              border-radius: 50px;
+            }
+          }
+          &:hover {
+            @extend %hover;
+          }
+        }
+        .active {
+          @extend %hover;
+        }
+      }
+    }
+    .img-col {
+      img {
+        width: 401px;
+      }
+    }
+    .react-col {
+      margin-top: 130px;
+      .small-title {
+        font-size: 14px;
+        font-weight: 500;
+        color: $blue;
+      }
+      h2 {
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 38px;
+        color: $black;
+        margin: 12px 0 15px;
+        span {
+          display: inline-block;
+          &:first-child {
+            padding: 9px 0;
+          }
+          &:nth-child(2) {
+            position: relative;
+            padding: 2px 0;
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 3px;
+              background: #356efd;
+              width: 0;
+              animation: underline 3s infinite;
+            }
+          }
+        }
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: $text-grey;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// For extend
+%hover {
+  a {
+    color: $blue;
+    border-color: $blue;
+    .icon {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .reactions {
+    display: none;
+  }
+}
