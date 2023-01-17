@@ -3,6 +3,14 @@ header {
   z-index: 100;
   nav {
     box-shadow: 0 5px 5px 0 rgb(0 0 0 / 4%);
+    svg {
+      .a {
+        fill: #0e1133;
+      }
+      .b {
+        fill: #2b70fa;
+      }
+    }
     .navbar-nav {
       li {
         margin-left: 30px;
@@ -67,5 +75,31 @@ header {
       font-weight: 500;
       color: $black;
     }
+  }
+}
+
+.nav-dark {
+  svg {
+    .a {
+      fill: #fff;
+    }
+    .b {
+      fill: #2b70fa;
+    }
+  }
+  .navbar-nav {
+    li {
+      .dropdown-menu {
+        a {
+          color: $black;
+        }
+      }
+      a {
+        color: $white;
+      }
+    }
+  }
+  .login {
+    color: $white;
   }
 }

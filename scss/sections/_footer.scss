@@ -1,9 +1,17 @@
-footer {
+.footer {
   padding: 100px 0 80px;
   background-color: $bg-grey;
   .logo-text {
     .logo {
       margin-bottom: 20px;
+      svg {
+        .a {
+          fill: #0e1133;
+        }
+        .b {
+          fill: #2b70fa;
+        }
+      }
     }
     p {
       font-size: 16px;
@@ -103,8 +111,68 @@ footer {
   }
 }
 
+.footer-dark {
+  .logo-text {
+    .logo {
+      svg {
+        .a {
+          fill: #fff;
+        }
+        .b {
+          fill: #2b70fa;
+        }
+      }
+    }
+    p {
+      color: $white;
+    }
+    .read {
+      color: $white;
+    }
+  }
+  .foot-col {
+    .foot-title {
+      color: $white;
+    }
+    ul {
+      li {
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  .touch {
+    li {
+      color: $white;
+    }
+  }
+}
+
+.foot-bar-dark {
+  background-color: transparent;
+  .buttons {
+    .btn-f-ios {
+      &:hover {
+        background-color: transparent;
+        color: $white;
+        border-color: transparent;
+      }
+    }
+    .btn-f-and {
+      color: $white;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  .copy {
+    color: $white;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  footer {
+  .footer {
     .row {
       .col-12 {
         text-align: center;

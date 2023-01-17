@@ -49,6 +49,26 @@
   }
 }
 
+.init-dark {
+  .row {
+    .init-info {
+      h1,
+      p {
+        color: $white;
+      }
+      .buttons {
+        .btn-ios {
+          background-color: transparent;
+          border-color: transparent;
+        }
+        .btn-and {
+          border: transparent;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1110px) {
   .init-mini-card {
     display: none;

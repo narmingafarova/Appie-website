@@ -72,3 +72,26 @@
     left: 0;
   }
 }
+
+.team-dark {
+  .title {
+    h2,
+    p {
+      color: $white;
+    }
+  }
+  .row {
+    .card {
+      background-color: transparent;
+      .card-body {
+        .card-title,
+        .card-text {
+          color: $white;
+        }
+      }
+    }
+  }
+  .btn {
+    background-color: $white;
+  }
+}

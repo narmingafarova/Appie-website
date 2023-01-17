@@ -80,6 +80,30 @@
   }
 }
 
+.traffic-dark {
+  .traffic-info {
+    h2,
+    p {
+      color: $white;
+    }
+    .traffic-list {
+      ul {
+        li {
+          .list-text {
+            h3,
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    background-color: $white;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .traffic-img {
     display: none;

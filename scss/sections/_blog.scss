@@ -67,6 +67,36 @@
   }
 }
 
+.blog-dark {
+  .title {
+    h2,
+    p {
+      color: $white;
+    }
+  }
+  .row {
+    .card {
+      background-color: transparent;
+      .card-body {
+        .card-title {
+          color: $white;
+          .category {
+            color: $white;
+          }
+        }
+        .card-text {
+          a {
+            color: $white;
+          }
+        }
+        .read {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .card {
     margin-bottom: 30px;

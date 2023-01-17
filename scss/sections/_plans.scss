@@ -54,70 +54,127 @@
     }
   }
   .row {
-    .card {
-      padding: 40px 40px 50px;
-      border: 0;
-      .card-body {
-        padding: 0;
-        .card-title {
-          font-size: 20px;
-          font-weight: 500;
-          color: $black;
-        }
-        .card-info {
-          border-bottom: 1px solid #e1e4ea;
-          padding-bottom: 20px;
-          .price {
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 1.2;
+    margin-top: 50px;
+    .col-12 {
+      .card {
+        position: relative;
+        padding: 40px 40px 50px;
+        border: 0;
+        transition: 0.3s;
+        .card-body {
+          padding: 0;
+          .card-title {
+            font-size: 20px;
+            font-weight: 500;
             color: $black;
-            margin: 0 0 15px;
-            strong {
-              font-size: 24px;
-              font-weight: 400;
-              position: relative;
-              top: -6px;
+          }
+          .card-info {
+            border-bottom: 1px solid #e1e4ea;
+            padding-bottom: 20px;
+            .price {
+              font-size: 36px;
+              font-weight: 700;
+              line-height: 1.2;
+              color: $black;
+              margin: 0 0 15px;
+              strong {
+                font-size: 24px;
+                font-weight: 400;
+                position: relative;
+                top: -6px;
+              }
+              span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.2;
+                color: $text-grey;
+              }
             }
-            span {
+            .per-day {
               font-size: 14px;
               font-weight: 400;
-              line-height: 1.2;
               color: $text-grey;
             }
           }
-          .per-day {
-            font-size: 14px;
-            font-weight: 400;
-            color: $text-grey;
-          }
-        }
-        .card-text {
-          padding: 0;
-          margin-top: 30px;
-          li {
-            font-size: 15px;
-            font-weight: 500;
-            color: $text-grey;
-            margin: 8px 0;
-            .icon {
-              width: 25px;
-              height: 25px;
-              font-size: 14px;
-              line-height: 1;
-              text-align: center;
-              background-color: #effaf3;
-              border-radius: 50%;
-              padding-top: 5px;
-              margin-right: 10px;
-              transition: 0.3s;
-              .green {
-                color: #31c369;
-              }
-              .red {
-                color: #f8452d;
+          .card-text {
+            padding: 0;
+            margin-top: 30px;
+            li {
+              font-size: 15px;
+              font-weight: 500;
+              color: $text-grey;
+              margin: 8px 0;
+              .icon {
+                width: 25px;
+                height: 25px;
+                font-size: 14px;
+                line-height: 1;
+                text-align: center;
+                background-color: #effaf3;
+                border-radius: 50%;
+                padding-top: 5px;
+                margin-right: 10px;
+                transition: 0.3s;
+                .green {
+                  color: #31c369;
+                }
+                .red {
+                  color: #f8452d;
+                }
               }
             }
+          }
+        }
+        .popular {
+          position: absolute;
+          top: -20px;
+          right: 5%;
+        }
+      }
+      &:nth-child(2) {
+        .card {
+          box-shadow: 0 40px 40px 0 rgb(14 17 51 / 10%);
+        }
+      }
+      &:nth-child(odd) {
+        .card {
+          &:hover {
+            box-shadow: 10px 10px 25px 0 rgb(0 0 0 / 14%);
+          }
+        }
+      }
+    }
+  }
+  .show {
+    display: none;
+    padding-left: 20px;
+  }
+}
+
+.plans-dark {
+  .title {
+    h2,
+    p {
+      color: $white;
+    }
+  }
+  .toggles {
+    li {
+      color: $white;
+    }
+  }
+  .row {
+    .col-12 {
+      .card {
+        background-color: transparent;
+        border: 1px solid $white;
+        .card-body {
+          .card-title,
+          .card-info .price,
+          .card-info .price span,
+          .card-info .per-day,
+          .card-text li {
+            color: $white;
           }
         }
       }

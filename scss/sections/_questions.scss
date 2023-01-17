@@ -38,3 +38,15 @@
     }
   }
 }
+
+.questions-dark {
+  .title {
+    h2,
+    p {
+      color: $white;
+    }
+  }
+  .email {
+    color: $white;
+  }
+}

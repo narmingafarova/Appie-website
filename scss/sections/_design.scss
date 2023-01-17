@@ -36,6 +36,37 @@
   }
 }
 
+.design-dark {
+  .title {
+    h2,
+    p {
+      color: $white;
+    }
+  }
+  .design-cards {
+    .card {
+      background-color: transparent;
+      .card-body {
+        h5,
+        p {
+          color: $white;
+        }
+      }
+      &:hover {
+        background-color: $white;
+        .card-body {
+          h5 {
+            color: $black;
+          }
+          p {
+            color: $text-grey;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .design {
     margin-top: 550px;

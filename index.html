@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="scss/style.css" />
     <title>Appie</title>
   </head>
-  <body>
+  <body class="bg-white">
     <!-- Nav Start -->
     <header class="position-fixed">
       <nav class="navbar navbar-expand-lg bg-white py-3">
@@ -36,16 +36,6 @@
               height="30"
               viewBox="0 0 119.968 30"
             >
-              <defs>
-                <style>
-                  .a {
-                    fill: #0e1133;
-                  }
-                  .b {
-                    fill: #2b70fa;
-                  }
-                </style>
-              </defs>
               <g transform="translate(-375 -26)">
                 <path
                   class="a"
@@ -133,10 +123,22 @@
             <div class="d-flex align-items-center justify-content-center">
               <a
                 href="#"
-                class="login d-flex align-items-center text-decoration-none pe-5"
+                class="login nav-btn-lang d-flex align-items-center text-decoration-none pe-5"
                 ><i class="fa-regular fa-user pe-2"></i>Login</a
               >
-              <button class="btn btn-primary">Get Started</button>
+              <button class="btn nav-btn-lang btn-primary">Get Started</button>
+              <button
+                class="btn btn-func lang-btn btn-primary ms-3"
+                type="submit"
+              >
+                AZ
+              </button>
+              <button
+                class="btn btn-func mode-btn btn-light ms-3"
+                type="submit"
+              >
+                🌙
+              </button>
             </div>
           </div>
         </div>
@@ -150,20 +152,20 @@
         <div class="row">
           <div class="col-12 col-sm-12 col-md-6">
             <div class="init-info">
-              <span class="text-capitalize">Welcome To Appie</span>
-              <h1>Manage it all, in this all new system.</h1>
-              <p>
+              <span class="text-capitalize init-lang">Welcome To Appie</span>
+              <h1 class="init-lang">Manage it all, in this all new system.</h1>
+              <p class="init-lang">
                 Hanky panky lavatory up the duff jolly good cack brolly is
                 chinwag zonked happy days sloshed.
               </p>
               <div class="buttons d-flex">
                 <button
-                  class="btn btn-ios d-flex align-items-center justify-content-center"
+                  class="btn btn-ios init-lang d-flex align-items-center justify-content-center"
                 >
                   <i class="fa-brands fa-apple"></i>Download for IOS
                 </button>
                 <button
-                  class="btn btn-and d-flex align-items-center justify-content-center"
+                  class="btn btn-and init-lang d-flex align-items-center justify-content-center"
                 >
                   <i class="fa-brands fa-google-play"></i>Download for Android
                 </button>
@@ -390,7 +392,11 @@
     <!-- Authors Start -->
     <section class="authors">
       <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-indicators">
             <button
               type="button"
@@ -639,7 +645,123 @@
           </li>
           <li>Yearly</li>
         </ul>
-        <div class="row">
+        <div class="row plancard-display">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Fresh</h5>
+                <div class="card-info">
+                  <div class="price">
+                    <strong>$</strong> 12 <span>/monthly</span>
+                  </div>
+                  <div class="per-day">Get your 14 day free trial</div>
+                </div>
+                <ul class="card-text">
+                  <li class="d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-check green"></i>
+                    </div>
+                    60-day chat history
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-check green"></i>
+                    </div>
+                    15 GB cloud storage
+                  </li>
+                </ul>
+                <div class="btn">
+                  <a href="#">Choose plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Sweet</h5>
+                <div class="card-info">
+                  <div class="price">
+                    <strong>$</strong> 32 <span>/monthly</span>
+                  </div>
+                  <div class="per-day">Billed $276 per website annually.</div>
+                </div>
+                <ul class="card-text">
+                  <li class="d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-check red"></i>
+                    </div>
+                    60-day chat history
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-check red"></i>
+                    </div>
+                    15 GB cloud storage
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-check red"></i>
+                    </div>
+                    24/7 Support
+                  </li>
+                </ul>
+                <div class="btn btn-red">
+                  <a href="#">Choose plan</a>
+                </div>
+              </div>
+              <div class="popular">
+                <img
+                  src="https://tf.quomodosoft.com/appie/wp-content/uploads/2022/02/popular.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Juicy</h5>
+                <div class="card-info">
+                  <div class="price">
+                    <strong>$</strong> 122 <span>/monthly</span>
+                  </div>
+                  <div class="per-day">Billed $276 per website annually.</div>
+                </div>
+                <ul class="card-text">
+                  <li class="d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-check green"></i>
+                    </div>
+                    60-day chat history
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-check green"></i>
+                    </div>
+                    Data security
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-check green"></i>
+                    </div>
+                    100 GB cloud storage
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-check green"></i>
+                    </div>
+                    24/7 Support
+                  </li>
+                </ul>
+                <div class="btn">
+                  <a href="#">Choose plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row show">
           <div class="col-12 col-sm-6 col-md-4">
             <div class="card">
               <div class="card-body">
@@ -703,6 +825,12 @@
                 <div class="btn btn-red">
                   <a href="#">Choose plan</a>
                 </div>
+              </div>
+              <div class="popular">
+                <img
+                  src="https://tf.quomodosoft.com/appie/wp-content/uploads/2022/02/popular.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -979,7 +1107,7 @@
     <!-- Subscribe End -->
 
     <!-- Footer Start -->
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="logo-text col-12 col-sm-6 col-md-3">
@@ -990,16 +1118,6 @@
                 height="30"
                 viewBox="0 0 119.968 30"
               >
-                <defs>
-                  <style>
-                    .a {
-                      fill: #0e1133;
-                    }
-                    .b {
-                      fill: #2b70fa;
-                    }
-                  </style>
-                </defs>
                 <g transform="translate(-375 -26)">
                   <path
                     class="a"
@@ -1136,5 +1254,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
