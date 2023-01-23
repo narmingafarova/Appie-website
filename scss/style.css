@@ -957,8 +957,18 @@ header nav .login {
 }
 .plans .row .col-12 .card .popular {
   position: absolute;
-  top: -20px;
-  right: 5%;
+  top: -15px;
+  right: 7%;
+  font-size: 14px;
+  color: #fff;
+  background-color: #f8452d;
+  padding: 3px 15px;
+  border-radius: 25px;
+  box-shadow: -2px 8px 25px -7px rgba(0, 0, 0, 0.65);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .plans .row .col-12:nth-child(2) .card {
   box-shadow: 0 40px 40px 0 rgba(14, 17, 51, 0.1);
@@ -999,7 +1009,11 @@ header nav .login {
   padding: 5px 0 120px;
 }
 .questions .accordion {
+  width: 100%;
   margin-top: 50px;
+}
+.questions .accordion .accordion-item {
+  width: 45%;
 }
 .questions .accordion .accordion-item .accordion-header .accordion-button {
   font-size: 18px;
@@ -1035,6 +1049,14 @@ header nav .login {
   color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .questions .accordion {
+    display: block;
+  }
+  .questions .accordion .accordion-item {
+    width: 100%;
+  }
+}
 .blog {
   padding: 110px 0;
 }

@@ -69,6 +69,60 @@ const langData = {
     "Mucker plastered bugger all mate morish are.",
   ],
 
+  //* Authors Eng
+  author_info_en: [
+    "William Smith",
+    "April 14, 2022",
+    "William Smith",
+    "April 14, 2022",
+    "William Smith",
+    "April 14, 2022",
+  ],
+  author_text_en: [
+    "Why I say old chap that is spiffing lurgy Oxford cracking goal bleeder, bog-standard Harry brilliant mush a blinding shot starkers.",
+    "Why I say old chap that is spiffing lurgy Oxford cracking goal bleeder, bog-standard Harry brilliant mush a blinding shot starkers.",
+    "Why I say old chap that is spiffing lurgy Oxford cracking goal bleeder, bog-standard Harry brilliant mush a blinding shot starkers.",
+  ],
+
+  //* Team Eng
+  team_title_h2_en: ["Meet our Team Members"],
+  team_title_p_en: ["Different layouts and styles for team sections."],
+  team_mem_pos_en: ["CEO-Founder", "Web Designer", "Reviewer", "Web Developer"],
+  team_btn_en: ["View all Members <i class='fas fa-arrow-right'></i>"],
+
+  //* Plans Eng
+  plans_title_h2_en: ["Choose your plan"],
+  plans_title_p_en: ["Engage more users using beautiful pricing page."],
+  plans_toggle_text_en: ["Monthly", "Yearly"],
+
+  //* Questions En
+  ques_title_h2_en: ["Frequently asked questions"],
+  ques_title_p_en: ["Different layouts and styles for FAQ sections."],
+  ques_question_en: [
+    "Where do I usually find FAQs in a page?",
+    "Where do I usually find FAQs in a page?",
+    "Where do I usually find FAQs in a page?",
+    "Where do I usually find FAQs in a page?",
+  ],
+  ques_answer_en: [
+    "Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie.",
+    "Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie.",
+    "Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie.",
+    "Naff Oxford vagabond in my flat chinwag blatant grub tomfoolery that I bits and bobs up the duff cras boot bevvy no biggie.",
+  ],
+  ques_email_en: ["Can't find an answer? <a href='#'>Email us</a>"],
+
+  //* Blog En
+  blog_title_h2_en: ["Latest blog posts"],
+  blog_title_p_en: ["Different layouts and styles for Blog sections."],
+
+  //* Subscribe En
+  subscribe_en: [
+    "Start your project with appie.",
+    "We will email you only about this product.",
+    "Subscribe",
+  ],
+
   //! Az Language Data
   //* Nav and Initial Section Az
   nav_link_az: [
@@ -149,6 +203,69 @@ const langData = {
     "Mucker suvaqlı bugger bütün mate morish var.",
     "Mucker suvaqlı bugger bütün mate morish var.",
     "Mucker suvaqlı bugger bütün mate morish var.",
+  ],
+
+  //* Authors Az
+  author_info_az: [
+    "William Smith",
+    "14 Aprel, 2022",
+    "William Smith",
+    "14 Aprel, 2022",
+    "William Smith",
+    "14 Aprel, 2022",
+  ],
+  author_text_az: [
+    "Niyə mən lurgy Oxford krekinq qol bleeder, bataqlıq-standart Harry brilliant mush bir kor shot starkers spiffing ki, köhnə adam deyirəm.",
+    "Niyə mən lurgy Oxford krekinq qol bleeder, bataqlıq-standart Harry brilliant mush bir kor shot starkers spiffing ki, köhnə adam deyirəm.",
+    "Niyə mən lurgy Oxford krekinq qol bleeder, bataqlıq-standart Harry brilliant mush bir kor shot starkers spiffing ki, köhnə adam deyirəm.",
+  ],
+
+  //* Team Az
+  team_title_h2_az: ["Komandamızın üzvləri ilə tanış olun"],
+  team_title_p_az: ["Komanda bölmələri üçün müxtəlif tərtibatlar və üslublar."],
+  team_mem_pos_az: [
+    "Baş Direktor-təsisçi",
+    "Veb Dizayner",
+    "Rəyçi",
+    "Veb Developer",
+  ],
+  team_btn_az: ["Bütün Üzvlərə Baxın <i class='fas fa-arrow-right'></i>"],
+
+  //* Plans Az
+  plans_title_h2_az: ["Planınızı seçin"],
+  plans_title_p_az: [
+    "Gözəl qiymət səhifəsindən istifadə edərək daha çox istifadəçi cəlb edin.",
+  ],
+  plans_toggle_text_az: ["Aylıq", "İllik"],
+
+  //* Questions Az
+  ques_title_h2_az: ["Tez-tez verilən suallar"],
+  ques_title_p_az: ["FAQ bölmələri üçün müxtəlif tərtibatlar və üslublar."],
+  ques_question_az: [
+    "Mən adətən bir səhifədə tez-tez verilən sualları haradan tapıram?",
+    "Mən adətən bir səhifədə tez-tez verilən sualları haradan tapıram?",
+    "Mən adətən bir səhifədə tez-tez verilən sualları haradan tapıram?",
+    "Mən adətən bir səhifədə tez-tez verilən sualları haradan tapıram?",
+  ],
+  ques_answer_az: [
+    "Naff Oxford sərgərdan mənim düz kürəkənimdə abırsız sərxoş bir adamdır ki, mən onu döyəcləyirəm və heç bir böyük iş görmürəm.",
+    "Naff Oxford sərgərdan mənim düz kürəkənimdə abırsız sərxoş bir adamdır ki, mən onu döyəcləyirəm və heç bir böyük iş görmürəm.",
+    "Naff Oxford sərgərdan mənim düz kürəkənimdə abırsız sərxoş bir adamdır ki, mən onu döyəcləyirəm və heç bir böyük iş görmürəm.",
+    "Naff Oxford sərgərdan mənim düz kürəkənimdə abırsız sərxoş bir adamdır ki, mən onu döyəcləyirəm və heç bir böyük iş görmürəm.",
+  ],
+  ques_email_az: [
+    "Cavab tapa bilmirsiniz? <a href='#'>Bizə e-poçt göndərin</a>",
+  ],
+
+  //* Blog Az
+  blog_title_h2_az: ["Ən son blog yazıları"],
+  blog_title_p_az: ["Bloq bölmələri üçün müxtəlif tərtibatlar və üslublar."],
+
+  //* Subscribe Az
+  subscribe_az: [
+    "Layihənizi appie ilə başlayın.",
+    "Biz sizə yalnız bu məhsul haqqında e-poçt göndərəcəyik.",
+    "Abunə ol",
   ],
 };
 

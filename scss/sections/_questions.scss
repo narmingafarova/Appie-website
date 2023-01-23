@@ -6,8 +6,10 @@
   background-size: auto;
   padding: 5px 0 120px;
   .accordion {
+    width: 100%;
     margin-top: 50px;
     .accordion-item {
+      width: 45%;
       .accordion-header {
         .accordion-button {
           font-size: 18px;
@@ -48,5 +50,16 @@
   }
   .email {
     color: $white;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .questions {
+    .accordion {
+      display: block;
+      .accordion-item {
+        width: 100%;
+      }
+    }
   }
 }

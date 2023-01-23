@@ -43,11 +43,39 @@ const trafListTitle = document.querySelectorAll(".traffic-list .list-text h3");
 const trafListText = document.querySelectorAll(".traffic-list .list-text p");
 
 // Authors section
+const authorsInfo = document.querySelectorAll(".authors .author-info-lan");
+const authorsText = document.querySelectorAll(".authors .author-text-lan");
+
+// Team section
+const teamTitleMain = document.querySelector(".team .title h2");
+const teamTitleDesc = document.querySelector(".team .title p");
+const teamMemberPosition = document.querySelectorAll(".team .card-body .card-text");
+const teamBtn = document.querySelector(".team .btn-w-arrow");
 
 // Plans section
+const plansTitleMain = document.querySelector(".plans .title h2");
+const plansTitleDesc = document.querySelector(".plans .title p");
+const plansTogglesText = document.querySelectorAll(".plans .toggle-diff");
 const input = document.getElementById("switch");
 const showcards = document.getElementsByClassName("show")[0];
 const plan_cards = document.getElementsByClassName("plancard-display")[0];
+
+// Questions section
+const questionTitleMain = document.querySelector(".questions .title h2");
+const questionTitleDesc = document.querySelector(".questions .title p");
+const questionHeader = document.querySelectorAll(
+  ".questions .accordion-header span"
+);
+const questionAnswer = document.querySelectorAll(".questions .accordion-body");
+const questionEmail = document.querySelector(".questions .email p");
+
+// Blog section
+const blogTitleMain = document.querySelector(".blog .title h2");
+const blogTitleDesc = document.querySelector(".blog .title p");
+
+// Subscribe section
+const subscribeData = document.querySelectorAll(".subscribe-lan");
+const subscFormInput = document.querySelector(".subscribe form input");
 
 // Plans toggle
 input.addEventListener("click", () => {
@@ -107,10 +135,54 @@ langBtn.onclick = () => {
       trafListText[index].innerHTML = langData.traf_list_text_az[index];
     }
 
+    // Authors Section
+    for (let index in langData.author_info_az) {
+      authorsInfo[index].innerHTML = langData.author_info_az[index];
+    }
+    for (let index in langData.author_text_az) {
+      authorsText[index].innerHTML = langData.author_text_az[index];
+    }
+
+    // Team Section
+    teamTitleMain.innerHTML = langData.team_title_h2_az;
+    teamTitleDesc.innerHTML = langData.team_title_p_az;
+    for (let index in langData.team_mem_pos_az) {
+      teamMemberPosition[index].innerHTML = langData.team_mem_pos_az[index];
+    }
+    teamBtn.innerHTML = langData.team_btn_az;
+
+    // Plans Section
+    plansTitleMain.innerHTML = langData.plans_title_h2_az;
+    plansTitleDesc.innerHTML = langData.plans_title_p_az;
+    for (let index in langData.plans_toggle_text_az) {
+      plansTogglesText[index].innerHTML = langData.plans_toggle_text_az[index];
+    }
+
+    // Questions Section
+    questionTitleMain.innerHTML = langData.ques_title_h2_az;
+    questionTitleDesc.innerHTML = langData.ques_title_p_az;
+    for (let index in langData.ques_question_az) {
+      questionHeader[index].innerHTML = langData.ques_question_az[index];
+    }
+    for (let index in langData.ques_answer_az) {
+      questionAnswer[index].innerHTML = langData.ques_answer_az[index];
+    }
+    questionEmail.innerHTML = langData.ques_email_az;
+
+    // Blog Section
+    blogTitleMain.innerHTML = langData.blog_title_h2_az;
+    blogTitleDesc.innerHTML = langData.blog_title_p_az;
+
+    // Subscribe Section
+    for (let index in langData.subscribe_az) {
+      subscribeData[index].innerHTML = langData.subscribe_az[index];
+    }
+    subscFormInput.placeholder = "Sizin e-poçt";
+
     langBtn.innerHTML = "EN";
     localStorage.setItem("lang", "az");
   } else {
-    // Nav and Initial sections
+    // Nav and Initial Sections
     for (let index in langData.nav_link_en) {
       navLink[index].innerHTML = langData.nav_link_en[index];
     }
@@ -153,6 +225,50 @@ langBtn.onclick = () => {
     for (let index in langData.traf_list_text_en) {
       trafListText[index].innerHTML = langData.traf_list_text_en[index];
     }
+
+    // Authors Section
+    for (let index in langData.author_info_en) {
+      authorsInfo[index].innerHTML = langData.author_info_en[index];
+    }
+    for (let index in langData.author_text_en) {
+      authorsText[index].innerHTML = langData.author_text_en[index];
+    }
+
+    // Team Section
+    teamTitleMain.innerHTML = langData.team_title_h2_en;
+    teamTitleDesc.innerHTML = langData.team_title_p_en;
+    for (let index in langData.team_mem_pos_en) {
+      teamMemberPosition[index].innerHTML = langData.team_mem_pos_en[index];
+    }
+    teamBtn.innerHTML = langData.team_btn_en;
+
+    // Plans Section
+    plansTitleMain.innerHTML = langData.plans_title_h2_en;
+    plansTitleDesc.innerHTML = langData.plans_title_p_en;
+    for (let index in langData.plans_toggle_text_en) {
+      plansTogglesText[index].innerHTML = langData.plans_toggle_text_en[index];
+    }
+
+    // Questions Section
+    questionTitleMain.innerHTML = langData.ques_title_h2_en;
+    questionTitleDesc.innerHTML = langData.ques_title_p_en;
+    for (let index in langData.ques_question_en) {
+      questionHeader[index].innerHTML = langData.ques_question_en[index];
+    }
+    for (let index in langData.ques_answer_en) {
+      questionAnswer[index].innerHTML = langData.ques_answer_en[index];
+    }
+    questionEmail.innerHTML = langData.ques_email_en;
+
+    // Blog Section
+    blogTitleMain.innerHTML = langData.blog_title_h2_en;
+    blogTitleDesc.innerHTML = langData.blog_title_p_en;
+
+    // Subscribe Section
+    for (let index in langData.subscribe_en) {
+      subscribeData[index].innerHTML = langData.subscribe_en[index];
+    }
+    subscFormInput.placeholder = "Your email";
 
     // Btn and local
     langBtn.innerHTML = "AZ";
@@ -209,6 +325,50 @@ if (localStorage.getItem("lang") === null) {
       trafListText[index].innerHTML = langData.traf_list_text_en[index];
     }
 
+    // Authors Section
+    for (let index in langData.author_info_en) {
+      authorsInfo[index].innerHTML = langData.author_info_en[index];
+    }
+    for (let index in langData.author_text_en) {
+      authorsText[index].innerHTML = langData.author_text_en[index];
+    }
+
+    // Team Section
+    teamTitleMain.innerHTML = langData.team_title_h2_en;
+    teamTitleDesc.innerHTML = langData.team_title_p_en;
+    for (let index in langData.team_mem_pos_en) {
+      teamMemberPosition[index].innerHTML = langData.team_mem_pos_en[index];
+    }
+    teamBtn.innerHTML = langData.team_btn_en;
+
+    // Plans Section
+    plansTitleMain.innerHTML = langData.plans_title_h2_en;
+    plansTitleDesc.innerHTML = langData.plans_title_p_en;
+    for (let index in langData.plans_toggle_text_en) {
+      plansTogglesText[index].innerHTML = langData.plans_toggle_text_en[index];
+    }
+
+    // Questions Section
+    questionTitleMain.innerHTML = langData.ques_title_h2_en;
+    questionTitleDesc.innerHTML = langData.ques_title_p_en;
+    for (let index in langData.ques_question_en) {
+      questionHeader[index].innerHTML = langData.ques_question_en[index];
+    }
+    for (let index in langData.ques_answer_en) {
+      questionAnswer[index].innerHTML = langData.ques_answer_en[index];
+    }
+    questionEmail.innerHTML = langData.ques_email_en;
+
+    // Blog Section
+    blogTitleMain.innerHTML = langData.blog_title_h2_en;
+    blogTitleDesc.innerHTML = langData.blog_title_p_en;
+
+    // Subscribe Section
+    for (let index in langData.subscribe_en) {
+      subscribeData[index].innerHTML = langData.subscribe_en[index];
+    }
+    subscFormInput.placeholder = "Your email";
+
     // Btn
     langBtn.innerHTML = "AZ";
   } else {
@@ -256,6 +416,50 @@ if (localStorage.getItem("lang") === null) {
       trafListText[index].innerHTML = langData.traf_list_text_az[index];
     }
 
+    // Authors Section
+    for (let index in langData.author_info_az) {
+      authorsInfo[index].innerHTML = langData.author_info_az[index];
+    }
+    for (let index in langData.author_text_az) {
+      authorsText[index].innerHTML = langData.author_text_az[index];
+    }
+
+    // Team Section
+    teamTitleMain.innerHTML = langData.team_title_h2_az;
+    teamTitleDesc.innerHTML = langData.team_title_p_az;
+    for (let index in langData.team_mem_pos_az) {
+      teamMemberPosition[index].innerHTML = langData.team_mem_pos_az[index];
+    }
+    teamBtn.innerHTML = langData.team_btn_az;
+
+    // Plans Section
+    plansTitleMain.innerHTML = langData.plans_title_h2_az;
+    plansTitleDesc.innerHTML = langData.plans_title_p_az;
+    for (let index in langData.plans_toggle_text_az) {
+      plansTogglesText[index].innerHTML = langData.plans_toggle_text_az[index];
+    }
+
+    // Questions Section
+    questionTitleMain.innerHTML = langData.ques_title_h2_az;
+    questionTitleDesc.innerHTML = langData.ques_title_p_az;
+    for (let index in langData.ques_question_az) {
+      questionHeader[index].innerHTML = langData.ques_question_az[index];
+    }
+    for (let index in langData.ques_answer_az) {
+      questionAnswer[index].innerHTML = langData.ques_answer_az[index];
+    }
+    questionEmail.innerHTML = langData.ques_email_az;
+
+    // Blog Section
+    blogTitleMain.innerHTML = langData.blog_title_h2_az;
+    blogTitleDesc.innerHTML = langData.blog_title_p_az;
+
+    // Subscribe Section
+    for (let index in langData.subscribe_az) {
+      subscribeData[index].innerHTML = langData.subscribe_az[index];
+    }
+    subscFormInput.placeholder = "Sizin e-poçt";
+
     // Btn and local
     langBtn.innerHTML = "EN";
   }
@@ -278,7 +482,7 @@ modeBtn.onclick = () => {
     footer.className = "footer footer-dark bg-dark";
     footBar.className = "foot-bar foot-bar-dark";
     modeBtn.innerHTML = "🌞";
-
+    // modeBtn.className = "btn btn-func mode-btn-dark btn-light ms-3";
     localStorage.setItem("mode", "dark");
   } else {
     body.className = "bg-white";
@@ -294,6 +498,7 @@ modeBtn.onclick = () => {
     footer.className = "footer";
     footBar.className = "foot-bar";
     modeBtn.innerHTML = "🌙";
+    // modeBtn.className = "btn btn-func mode-btn btn-light ms-3";
 
     localStorage.setItem("mode", "light");
   }
@@ -319,6 +524,7 @@ if (localStorage.getItem("mode") === null) {
     footer.className = "footer footer-dark bg-dark";
     footBar.className = "foot-bar foot-bar-dark";
     modeBtn.innerHTML = "🌞";
+    // modeBtn.className = "btn btn-func mode-btn-dark btn-light ms-3";
   } else {
     body.className = "bg-white";
     nav.className = "navbar navbar-expand-lg bg-white py-3";
@@ -333,5 +539,6 @@ if (localStorage.getItem("mode") === null) {
     footer.className = "footer";
     footBar.className = "foot-bar";
     modeBtn.innerHTML = "🌙";
+    // modeBtn.className = "btn btn-func mode-btn btn-light ms-3";
   }
 }
