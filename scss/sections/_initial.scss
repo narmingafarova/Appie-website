@@ -92,6 +92,12 @@
       }
       .init-imgs {
         margin-top: 10vh;
+        .init-phone {
+          img {
+            width: 300px;
+            height: 500px;
+          }
+        }
       }
     }
   }
